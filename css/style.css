@@ -1,0 +1,131 @@
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+
+/************************* INICIO *******************************/
+h1 {
+	text-align: center;
+	padding: 0.5em;
+}
+
+.calculator {
+	height: 4em;
+	font-weight: 600;
+	padding-left: 1em;
+	padding-right: 1em;
+	background-color: inherit;
+	border: black solid 2px;
+	box-shadow: 4px 4px 0 black;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.calculator > i {
+	font-size: 2em;
+	margin-right: 0.5em;
+}
+
+.calculator:hover {
+	box-shadow: 3px 3px 0 black;
+	transform: translate(calc(-50% + 1px), calc(-50% + 1px));
+}
+.calculator:active {
+	transform: translate(calc(-50% + 3px), calc(-50% + 3px));
+	box-shadow: 1px 1px 0 black;
+}
+
+/********************** PRIMERA PAGINA ****************************/
+
+.page {
+	background-color: white;
+	max-width: 500px;
+	width: 100%;
+	margin: 2em auto;
+	padding: 20px;
+	position: sticky;
+	border-radius: 1em;
+	border: black solid 2px;
+	box-shadow: 4px 4px 0 black;
+}
+
+.page > .tittle,
+.page .label,
+.page .input {
+	text-align: center;
+}
+.page > .tittle {
+	margin-bottom: 2em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: uppercase;
+}
+.page > .consumo {
+	margin-bottom: 1.5em;
+}
+.page > .consumo > i {
+	font-size: 1.5em;
+	margin-right: 0.5em;
+}
+@media screen and (max-width: 480px) {
+	.page {
+		padding: unset;
+		border: unset;
+		box-shadow: unset;
+	}
+}
+.page > .tittle > i {
+	font-size: 2em;
+	margin-right: 0.5em;
+}
+.page .label {
+	font-weight: 600;
+	margin-bottom: 0.5em;
+}
+.page .input > input {
+	width: 8em;
+	padding-left: 1em;
+}
+.page .sublabel {
+	font-weight: 600;
+	font-size: 0.8em;
+}
+.page .subfijo {
+	display: inline-block;
+	font-weight: 600;
+	font-size: 0.5em;
+	margin: 10px 0px;
+	width: 8em;
+}
+
+.page .buttons {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 1em;
+}
+.page .buttons .button {
+	padding: 0.5em;
+	background-color: inherit;
+	border: black solid 2px;
+	box-shadow: 2px 2px 0 black;
+}
+.page .buttons .button:hover {
+	box-shadow: 1px 1px 0 black;
+	transform: translate(1px, 1px);
+}
+.page .buttons .button:active {
+	transform: translate(2px, 2px);
+	box-shadow: 0px 0px 0 black;
+}
+@media screen and (max-width: 480px) {
+	.page .buttons {
+		justify-content: space-around;
+	}
+}
+
+.hidden {
+	display: none;
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script
+			src="https://kit.fontawesome.com/c03c8a09fa.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Huella Ecologica</title>
+	</head>
+	<body>
+		<h1>Huella Ecológica de algunas costumbres alimenticias Argentinas</h1>
+		<button class="calculator" data-class="one">
+			<i class="fas fa-calculator"></i>Calcular Huella Personal
+		</button>
+
+		<form class="post">
+			<div class="page one hidden">
+				<h3 class="tittle">
+					<i class="fas fa-chess-board"></i>Consumo de Mate Cebado
+				</h3>
+				<div class="input">
+					<h3 class="label">¿Cuantos kg de Yeba Mate Consumes al mes?</h3>
+					<input type="number" min="0" name="yerbaxMes" />
+					<h4 class="subfijo">Kg x mes</h4>
+				</div>
+				<h3 class="tittle">
+					<i class="fas fa-chess-board"></i>Consumo de Asado
+				</h3>
+				<div class="input">
+					<h3 class="label">¿Cuantas veces al mes haces asados?</h3>
+					<input type="number" min="0" name="asadoxMes" />
+					<h4 class="subfijo">veces x mes</h4>
+				</div>
+				<div class="input">
+					<h3 class="label">¿Cuantos kg por personas compras?</h3>
+					<input type="number" min="0" name="asadoxPersona" />
+					<h4 class="subfijo">Kg x persona</h4>
+				</div>
+				<div class="buttons">
+					<button class="button" type="button" data-class="calculator">
+						<i class="fas fa-arrow-circle-left"></i> Cerrar
+					</button>
+					<button class="button" type="button" data-class="two">
+						Siguiente <i class="fas fa-arrow-circle-right"></i>
+					</button>
+				</div>
+			</div>
+
+			<div class="page two hidden">
+				<h3 class="tittle">
+					<i class="fas fa-chess-board"></i>Consumo de Sanguches de Milanesa
+				</h3>
+				<div class="input">
+					<h3 class="label">¿Cuantos sanguches consumes en una semana?</h3>
+					<h3 class="sublabel">
+						sanguche Basico (lechuga, tomate, cebolla, mayonesa, mostaza)
+					</h3>
+					<input type="number" min="0" />
+					<h4 class="subfijo">sanguches x semana</h4>
+
+					<h3 class="sublabel">Con Añadidos</h3>
+					<label><input type="checkbox" /> C/Papas Fritas</label>
+					<label><input type="checkbox" /> C/Huevos</label>
+					<label><input type="checkbox" /> C/Queso</label>
+					<label><input type="checkbox" /> C/Jamon</label>
+					<input type="number" min="0" />
+					<h4 class="subfijo">sanguches x semana</h4>
+				</div>
+				<div class="buttons">
+					<button class="button" type="button" data-class="one">
+						<i class="fas fa-arrow-circle-left"></i> Anterior
+					</button>
+					<button class="button" type="button" data-class="three">
+						Siguiente <i class="fas fa-arrow-circle-right"></i>
+					</button>
+				</div>
+			</div>
+
+			<div class="page three hidden">
+				<h3 class="tittle">
+					<i class="fas fa-chess-board"></i>Consumo de Hamburguesas de Res
+				</h3>
+				<div class="input">
+					<h3 class="label">¿Cuantas Hamburguesas consume?</h3>
+					<h3 class="sublabel">
+						Hamburguesa Basica (lechuga, tomate, cebolla, mayonesa, mostaza)
+					</h3>
+					<label><input type="checkbox" /> C/Papas Fritas</label>
+					<label><input type="checkbox" /> C/Huevos</label>
+					<label><input type="checkbox" /> C/Queso</label>
+					<label><input type="checkbox" /> C/Jamon</label>
+					<input type="number" min="0" />
+					<h4 class="subfijo">Hamburguesas x semana</h4>
+
+					<h3 class="sublabel">Hamburguesa Basica Doble</h3>
+					<label><input type="checkbox" /> C/Papas Fritas</label>
+					<label><input type="checkbox" /> C/Huevos</label>
+					<label><input type="checkbox" /> C/Queso</label>
+					<label><input type="checkbox" /> C/Jamon</label>
+					<input type="number" min="0" />
+					<h4 class="subfijo">Hamburguesas x semana</h4>
+
+					<h3 class="sublabel">Hamburguesa Basica Triple</h3>
+					<label><input type="checkbox" /> C/Papas Fritas</label>
+					<label><input type="checkbox" /> C/Huevos</label>
+					<label><input type="checkbox" /> C/Queso</label>
+					<label><input type="checkbox" /> C/Jamon</label>
+					<input type="number" min="0" />
+					<h4 class="subfijo">Hamburguesas x semana</h4>
+
+					<h3 class="sublabel">Mas Medallones</h3>
+					<label><input type="checkbox" /> C/Papas Fritas</label>
+					<label><input type="checkbox" /> C/Huevos</label>
+					<label><input type="checkbox" /> C/Queso</label>
+					<label><input type="checkbox" /> C/Jamon</label>
+					<input type="number" min="0" />
+					<h4 class="subfijo">Hamburguesas x semana</h4>
+				</div>
+				<div class="buttons">
+					<button class="button" type="button" data-class="two">
+						<i class="fas fa-arrow-circle-left"></i> Anterior
+					</button>
+					<button class="calculate" type="button" data-class="result">
+						Resultado <i class="fas fa-arrow-circle-right"></i>
+					</button>
+				</div>
+			</div>
+
+			<div class="page result hidden">
+				<h3 class="tittle">Resultados</h3>
+				<h3 class="consumo">
+					<i class="fas fa-chess-board"></i>Mate Cebado: <b class="yerba"></b>
+				</h3>
+				<h3 class="consumo">
+					<i class="fas fa-chess-board"></i>Asado: <b class="asado"></b>
+				</h3>
+				<h3 class="consumo">
+					<i class="fas fa-chess-board"></i>Sanguches de Milanesa:
+				</h3>
+				<h3 class="consumo"><i class="fas fa-chess-board"></i>Hamburguesas:</h3>
+				<h3 class="consumo">Huella Total:</h3>
+				<div class="buttons">
+					<button class="button" type="button" data-class="three">
+						<i class="fas fa-arrow-circle-left"></i> Anterior
+					</button>
+					<button class="button" type="reset" data-class="calculator">
+						Cerrar <i class="fas fa-arrow-circle-right"></i>
+					</button>
+				</div>
+			</div>
+		</form>
+
+		<script src="js/script.js"></script>
+	</body>
+</html>
