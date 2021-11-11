@@ -66,7 +66,7 @@
 					<h3 class="sublabel">
 						sanguche Basico (lechuga, tomate, cebolla, mayonesa, mostaza)
 					</h3>
-					<input type="number" min="0" />
+					<input type="number" min="0" name="cantSandwBasic" />
 					<h4 class="subfijo">sanguches x semana</h4>
 
 					<h3 class="sublabel">Con Añadidos</h3>
@@ -74,7 +74,7 @@
 					<label><input type="checkbox" /> C/Huevos</label>
 					<label><input type="checkbox" /> C/Queso</label>
 					<label><input type="checkbox" /> C/Jamon</label>
-					<input type="number" min="0" />
+					<input type="number" min="0" name="cantSandwEsp" />
 					<h4 class="subfijo">sanguches x semana</h4>
 				</div>
 				<div class="buttons">
@@ -100,7 +100,7 @@
 					<label><input type="checkbox" /> C/Huevos</label>
 					<label><input type="checkbox" /> C/Queso</label>
 					<label><input type="checkbox" /> C/Jamon</label>
-					<input type="number" min="0" />
+					<input type="number" min="0" name="burgerSimp" />
 					<h4 class="subfijo">Hamburguesas x semana</h4>
 
 					<h3 class="sublabel">Hamburguesa Basica Doble</h3>
@@ -108,7 +108,7 @@
 					<label><input type="checkbox" /> C/Huevos</label>
 					<label><input type="checkbox" /> C/Queso</label>
 					<label><input type="checkbox" /> C/Jamon</label>
-					<input type="number" min="0" />
+					<input type="number" min="0" name="burgerDoble" />
 					<h4 class="subfijo">Hamburguesas x semana</h4>
 
 					<h3 class="sublabel">Hamburguesa Basica Triple</h3>
@@ -116,7 +116,7 @@
 					<label><input type="checkbox" /> C/Huevos</label>
 					<label><input type="checkbox" /> C/Queso</label>
 					<label><input type="checkbox" /> C/Jamon</label>
-					<input type="number" min="0" />
+					<input type="number" min="0" name="burgerTriple" />
 					<h4 class="subfijo">Hamburguesas x semana</h4>
 
 					<h3 class="sublabel">Mas Medallones</h3>
@@ -124,7 +124,9 @@
 					<label><input type="checkbox" /> C/Huevos</label>
 					<label><input type="checkbox" /> C/Queso</label>
 					<label><input type="checkbox" /> C/Jamon</label>
-					<input type="number" min="0" />
+					<input type="number" min="0" name="medallones" />
+					<h4 class="subfijo">C/medallones</h4>
+					<input type="number" min="0" name="burgerMas" />
 					<h4 class="subfijo">Hamburguesas x semana</h4>
 				</div>
 				<div class="buttons">
@@ -147,9 +149,13 @@
 				</h3>
 				<h3 class="consumo">
 					<i class="fas fa-chess-board"></i>Sanguches de Milanesa:
+					<b class="milanesa"></b>
 				</h3>
-				<h3 class="consumo"><i class="fas fa-chess-board"></i>Hamburguesas:</h3>
-				<h3 class="consumo">Huella Total:</h3>
+				<h3 class="consumo">
+					<i class="fas fa-chess-board"></i>Hamburguesas:
+					<b class="hamburguesa"></b>
+				</h3>
+				<h3 class="consumo">Huella Total: <b class="total"></b></h3>
 				<div class="buttons">
 					<button class="button" type="button" data-class="three">
 						<i class="fas fa-arrow-circle-left"></i> Anterior

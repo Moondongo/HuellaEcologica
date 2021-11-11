@@ -37,7 +37,21 @@ const gHa = () => {
 	const yerba =
 		((data.yerbaxMes * 12) / 1679 + (data.yerbaxMes * 360) / 15361) * 3.32;
 	const asado = ((data.asadoxPersona * data.asadoxMes * 12) / 84.63) * 0.74;
+	const sanguche =
+		data.cantSandwBasic * 0.0028442 +
+		data.cantSandwEsp *
+			(0.0028442 + 0.00009899 + 0.0000629151 + 0.000978376 + 0.00000015856);
+	const burger =
+		data.burgerSimp * 0.00242053 +
+		data.burgerDoble * (0.00242053 + 0.002309) +
+		data.burgerTriple * (0.00242053 + 0.002309 * 2) +
+		data.burgerMas * (0.00242053 + 0.002309 * data.medallones);
+
+	const total = yerba + asado + sanguche + burger;
 
 	$('.yerba').innerHTML = ' ' + yerba.toFixed(2) + ' gHa';
 	$('.asado').innerHTML = ' ' + asado.toFixed(2) + ' gHa';
+	$('.milanesa').innerHTML = ' ' + sanguche.toFixed(2) + ' gHa';
+	$('.hamburguesa').innerHTML = ' ' + burger.toFixed(2) + ' gHa';
+	$('.total').innerHTML = ' ' + total.toFixed(2) + ' gHa';
 };
