@@ -26,26 +26,38 @@ const switchPage = (element, parent) => {
 
 const gHa = () => {
 	const data = {};
-
+	const cboxValue = [0, 0, 0, 0, 0];
 	for (const element of $('form').elements) {
 		if (element.name.length > 0) {
 			data[element.name] = element.value;
+		} else if (element.type == 'checkbox') {
+			if (element.checked) {
+				const i = Number(element.dataset.id);
+				cboxValue[i] += Number(element.value);
+			}
 		}
 	}
 	console.log(data);
+	console.log(cboxValue);
 
 	const yerba =
-		((data.yerbaxMes * 12) / 1679 + (data.yerbaxMes * 360) / 15361) * 3.32;
-	const asado = ((data.asadoxPersona * data.asadoxMes * 12) / 84.63) * 0.74;
+		((data.yerbaxMes * 12) / 1679 + (data.yerbaxMes * 360) / 15361) *
+		3.32 *
+		51.5;
+	const asado =
+		((data.asadoxPersona * data.asadoxMes * 12) / 84.63) * 0.74 * 51.5;
 	const sanguche =
 		data.cantSandwBasic * 0.0028442 +
-		data.cantSandwEsp *
-			(0.0028442 + 0.00009899 + 0.0000629151 + 0.000978376 + 0.00000015856);
+		data.cantSandwEsp * (0.0028442 + cboxValue[0]) * 51.5;
 	const burger =
 		data.burgerSimp * 0.00242053 +
+		cboxValue[1] +
 		data.burgerDoble * (0.00242053 + 0.002309) +
+		cboxValue[2] +
 		data.burgerTriple * (0.00242053 + 0.002309 * 2) +
-		data.burgerMas * (0.00242053 + 0.002309 * data.medallones);
+		cboxValue[3] +
+		data.burgerMas * (0.00242053 + 0.002309 * data.medallones) +
+		cboxValue[4] * 51.5;
 
 	const total = yerba + asado + sanguche + burger;
 
