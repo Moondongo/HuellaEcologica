@@ -1,8 +1,14 @@
 const $body = document.body;
 
 $body.addEventListener('click', (e) => {
-	const element = e.target;
-
+	let element = e.target;
+	if (
+		element.className != 'calculator' &&
+		element.className != 'button' &&
+		element.className != 'calculate'
+	) {
+		element = element.parentElement;
+	}
 	switch (element.className) {
 		case 'calculator':
 			switchPage(element, element);
@@ -37,9 +43,6 @@ const gHa = () => {
 			}
 		}
 	}
-	console.log(data);
-	console.log(cboxValue);
-
 	const yerba =
 		((data.yerbaxMes * 12) / 1679 + (data.yerbaxMes * 360) / 15361) *
 		3.32 *
