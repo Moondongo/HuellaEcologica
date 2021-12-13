@@ -44,11 +44,8 @@ const gHa = () => {
 		}
 	}
 	const yerba =
-		((data.yerbaxMes * 12) / 1679 + (data.yerbaxMes * 360) / 15361) *
-		3.32 *
-		51.5;
-	const asado =
-		((data.asadoxPersona * data.asadoxMes * 12) / 84.63) * 0.74 * 51.5;
+		((data.yerbaxMes * 12) / 1679 + (data.yerbaxMes * 360) / 15361) * 3.32;
+	const asado = ((data.asadoxPersona * data.asadoxMes * 12) / 84.63) * 0.74;
 	const sanguche =
 		data.cantSandwBasic * 0.0028442 +
 		data.cantSandwEsp * (0.0028442 + cboxValue[0]) * 51.5;
